@@ -1,0 +1,10 @@
+<style type="text/css">
+.divTitle  { width:200px; margin-left:50px; border-bottom:inset 5px #eeeeee; }
+.divCenter { width:300px; padding: 4px; text-align:center; font-weight: 700; }
+.btn_X  { width: 80px;               text-align:center; padding:0px; border:none; }
+.btn_N  { width: 60px; height: 50px; text-align:center; padding:8px; border-radius:7px; background-color:#CCCCCC; }
+.btn_S  { width: 80px; height: 36px; text-align:center; padding:8px; border-radius:7px; background-color:#CCCCCC; }
+.btn_M  { width: 80px; height: 50px; text-align:center; padding:8px; border-radius:7px; background-color:#CCCCCC; }
+.btn_LX { width:122px; height: 36px; text-align:center; padding:8px; border-radius:7px; background-color:#CCCCCC; }
+.btn_LO { width:122px; height: 36px; text-align:center; padding:8px; border-radius:7px; background-color:#F0F8FF; }
+</style>
