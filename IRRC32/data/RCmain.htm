@@ -1,0 +1,51 @@
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>GURC Server</title>
+  <meta name="copyright" content="(c) Goji 2017">
+  <meta name="viewport" content="width=480">
+  <style>
+    #valset {
+      position:absolute; width:450px; height:168px;
+      border:solid 2px #FEFEFE; background-color:#E0E0E0; border-radius:6px; display:none;
+    }
+  </style>
+</head>
+<body onload="view_rc()" bgcolor=#E0E0E0>
+<div id="view_area">
+</div>
+<div id="valset">
+  <form name="formset">
+    <div style="position:absolute; top: 20; left: 15;">##:</div>
+    <div style="position:absolute; top: 20; left: 55;"><input name="btn"  type=text size= 4></div>
+    <div style="position:absolute; top: 20; left:120;"><input name="tabs" type=text size= 4 disabled=disabled></div>
+    <div style="position:absolute; top: 20; left:190;"><input type=button value="posXY" onclick="BtnEdit(9000)"></div>
+    <div style="position:absolute; top: 20; left:272;">x:</div>
+    <div style="position:absolute; top: 20; left:290;"><input name="x"    type=text size= 3 onchange="clickCheck(1)"></div>
+    <div style="position:absolute; top: 20; left:362;">w:</div>
+    <div style="position:absolute; top: 20; left:385;"><input name="w"    type=text size= 3 onchange="clickCheck(1)"></div>
+
+    <div style="position:absolute; top: 48; left: 15;">Type:</div>
+    <div style="position:absolute; top: 48; left: 55;"><input name="mode" type=text size= 4></div>
+    <div style="position:absolute; top: 48; left:272;">y:</div>
+    <div style="position:absolute; top: 48; left:290;"><input name="y"    type=text size= 3 onchange="clickCheck(1)"></div>
+    <div style="position:absolute; top: 48; left:362;">h:</div>
+    <div style="position:absolute; top: 48; left:385;"><input name="h"    type=text size= 3 onchange="clickCheck(1)"></div>
+
+    <div style="position:absolute; top: 76; left: 15;">val0:</div>
+    <div style="position:absolute; top: 76; left: 55;"><input name="val0" type=text size=48 style="width:380px;"></div>
+    <div style="position:absolute; top:104; left: 15;">val1:</div>
+    <div style="position:absolute; top:104; left: 55;"><input name="val1" type=text size=48 style="width:380px;"></div>
+    <div style="position:absolute; top:132; left:275;">
+      <input type=button value="Read" onclick="BtnEdit(9001)">
+      <input type=button value="Load" onclick="BtnEdit(9002)">
+      <input type=button value="Save" onclick="BtnEdit(9003)">
+    </div>
+    <input type="hidden" name="uMAP" value" ">
+    <input type="hidden" name="uDAT" value" ">
+  </form>
+</div>
+#MAP_START = 0
+#MAP_COUNT = 0
+#<RCmain.js
+#<#Sroot.title.js

@@ -1,0 +1,23 @@
+#if #data_set == '123'
+#unit_count = 3
+#else
+#if #data_set == '12'
+#unit_count = 2
+#else
+#unit_count = 1
+#endif
+#endif
+#if #map_start != 0
+#MAP_START  = #map_start
+#endif
+#DEV_MAPS   = #MAP_START
+#<#Sroot#img..js
+#if #def == 'STD'
+#def_file   = '#Droot.#gname#name..#data_set..c'
+#<#Droot.xx#def..js
+#else
+#def_file   = '#Droot.#def..#data_set..c'
+#<#Droot#def..js
+#endif
+#MAP_START  = #MAP_START + #MAP_COUNT
+#map_start  = 0
