@@ -47,7 +47,7 @@ cl31.htmを元にしてcl41.htmを作る</br>
 
 7. リモコン画面を起動
 ```http
-http://192.168.0.23/ir.cgi?rc=/cl41
+http://192.168.0.141/ir.cgi?rc=/cl41
 ```
 
 
