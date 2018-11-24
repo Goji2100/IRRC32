@@ -43,16 +43,16 @@ IRServerでは、使用する画像、リモコンデータなどを記録する
 
 #### ソフトウェアの導入手順
 1. このリポジトリからファイルをダウンロード
-1. Arduinoのスケッチフォルダにダウンロードしたファイルに含まれているフォルダ「IRServer2」をフォルダごとコピー
-1. Arduino IDEでスケッチブック内のスケッチ(IRServer2)を開く
-1. 「IRServer2.ino」の先頭部分にある下記の３行を環境に合わせて書換える
+1. Arduinoのスケッチフォルダにダウンロードしたファイルに含まれているフォルダ「IRRC32」をフォルダごとコピー
+1. Arduino IDEでスケッチブック内のスケッチ(IRRC32)を開く
+1. 「IRdefs.h」の先頭部分にある下記の３行を環境に合わせて書換える
 
-```IRdefs.ino
+```IRdefs.h
 const char* ssid = "wifi-ssid";
 const char* password = "wifi-password";
 ```
 5. スケッチをコンパイルしてESP32-WROOM-32に書込む
-1. 「ツール」⇒「ESP8266 Sketch Data Upload」でIRServer2/dataフォルダ内のリモコンデータをアップロード
+1. 「ツール」⇒「ESP8266 Sketch Data Upload」でIRRC32/dataフォルダ内のリモコンデータをアップロード
 1. シリアルモニターを起動
 1. 表示されるESP32-WROOM-32に割振られたipアドレスを確認（例では192.168.0.141を仮定）
 1. ブラウザから「192.168.0.141/edit」にアクセスできることを確認</br>
@@ -75,7 +75,7 @@ const char* password = "wifi-password";
 1. 「ローカル」にある「clxx.htm」ファイルをテキストエディタで編集する</br>
   下記のファイルの```#img = 'cl5'```がリモコン画面に使用する画像ファイルの指定です。</br>
   この指定では```/S/cl5.jpg```を使用することになります。</br>
-  （これらファイルは、"Arduinoスケッチフォルダ\IRServer2\data\"フォルダ下にあります）
+  （これらファイルは、"Arduinoスケッチフォルダ\IRRC32\data\"フォルダ下にあります）
 
 ```cl51.htm
 #//
