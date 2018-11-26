@@ -52,7 +52,7 @@ const char* ssid = "wifi-ssid";
 const char* password = "wifi-password";
 ```
 5. スケッチをコンパイルしてESP32-WROOM-32に書込む
-1. 「ツール」⇒「ESP8266 Sketch Data Upload」でIRRC32/dataフォルダ内のリモコンデータをアップロード
+1. 「ツール」⇒「ESP32 Sketch Data Upload」でIRRC32/dataフォルダ内のリモコンデータをアップロード
 1. シリアルモニターを起動
 1. 表示されるESP32-WROOM-32に割振られたipアドレスを確認（例では192.168.0.141を仮定）
 1. ブラウザから「192.168.0.141/edit」にアクセスできることを確認</br>
