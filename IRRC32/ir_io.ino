@@ -574,6 +574,3 @@ void ir_frameWrite() {
   delay(1);
   DBG_OUTPUT_PORT.printf("[%4d] Send\n", ir_tix);
 }
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzYyNDQ0Nl19
--->
